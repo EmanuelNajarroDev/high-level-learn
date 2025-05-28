@@ -3,18 +3,18 @@ using namespace std;
 
 int main(){
 
-string name;
+    string name;
 
-cout << "Hello! What is your name?" << endl;
+    cout << "Hello! What is your name?" << endl;
 
-cin >> name;
+    cin >> name;
 
-cout << "Hey " << name << "!";
+    cout << "Hey " << name << "!";
 
 
-for(int i = 0; i <= 100; i+=2){
+    for(int i = 0; i <= 100; i+=2){
 
-    cout << i << endl;
+        cout << i << endl;
 
     }
 }
