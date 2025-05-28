@@ -11,7 +11,6 @@ int main(){
 
     cout << "Hey " << name << "!";
 
-
     for(int i = 0; i <= 100; i+=2){
 
         cout << i << endl;
