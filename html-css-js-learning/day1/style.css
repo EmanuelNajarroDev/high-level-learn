@@ -17,7 +17,7 @@ body {
 
 header {
     background-blend-mode:  #222;
-    color: #fff;
+    color: #333;
     padding: 20px 0;
     text-align: center;
 }
@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
   }
   
