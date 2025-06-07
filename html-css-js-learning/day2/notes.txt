@@ -1,0 +1,27 @@
+1. Inspecting in google chrome will open up dev tools and allow us to find 
+the css styles applied to the html. We can find exact colors and styles.
+Heights, widths, sizes
+
+2. Hex vs RGB and conversion
+
+3.CSS box models(margin)
+
+4. Adding spacing on the inside of buttons or "Padding" is
+more effiecent than setting a fixed height and width
+
+5. Default text behavior is to align buttons based on the text
+
+6. Borders add 1 pixel of height and width
+
+7. Tags i've learned(buttons and paragraphs can be specified through a class):
+
+    <p></p> : Paragraph tag used for text
+    <html></html> : 
+    <body></body> : 
+    <style></style> : Used for css within an html file
+    <a></a> : Used for links
+    <header></header> :
+    <button></button> : Used to create buttons
+
+
+
