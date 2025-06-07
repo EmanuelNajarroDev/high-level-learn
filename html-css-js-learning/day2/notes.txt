@@ -23,5 +23,50 @@ more effiecent than setting a fixed height and width
     <header></header> :
     <button></button> : Used to create buttons
 
+8. Paragraphs come with a default margin
+
+9. HTML CREATES THE CONTENT OF A WEBSITE! Text, Buttons, and Images
+
+   CSS CHANGES THE APPEARANCE OF A WEBSITE
+
+   JAVASCRIPT MAKES A WEBSITE INTERACTIVE
+
+10. Computers have trouble storting floats, and many floats can never be fully expressed.
+This leads to inaccuracies
+
+11. One possible solution is to use whole numbers and then divide by some multiple of 10
+
+12. Obviously we can use a round function. 
+
+13. math.round and alert("") for console in JS
+
+14.console.log()
+
+15. typeof in the console will tell you the type.
+
+16. JS utilizes automatic type conversion so a string 'hello' + 3 will be
+'hello3'
+
+17. Strings also follow pemdas(order of ops)
+
+18. Double quotes are useful if a single quote is within the string.
+
+19. Single quotes are default
+
+20. You can also use an escape string EX: 'I/'m learning JS'
+
+21. \n creates a new line of text
+
+22. Another string method is via back tics `...` template strings
+
+23. Special features: interpolation: allows us to insert a value directly into a string
+
+24. EX. `Items (${1+1}): $${(2095+799)}` recommended solution
+
+25. Multi-line strings with bac tics: easy to create line breaks without having to code \n manually
+
+
+
+
 
 
