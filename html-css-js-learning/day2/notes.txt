@@ -65,6 +65,14 @@ This leads to inaccuracies
 
 25. Multi-line strings with bac tics: easy to create line breaks without having to code \n manually
 
+26. using p{} at the top of a style tag makes the styles within it global
+
+27. text elements such as <strong></strong>(modifies to bold text)
+
+28. text element span allows for specific text within a <p> tag to made a class and then modified
+
+29. HTML structure
+
 
 
 
