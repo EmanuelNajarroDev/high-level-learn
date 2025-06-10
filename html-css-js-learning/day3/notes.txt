@@ -1,0 +1,22 @@
+Day 3 notes
+
+1. Void elements do not need a closing tag
+
+2. Input element will create types of input boxes
+
+3. block elements take up entire line
+
+4. inline-block element only takes up as much space as it needs
+
+5. inline element are just text elements that appear on a line of text
+
+6. display: block takes up entire line or line within div, inline-block only takes up
+what is necessary
+
+7. Nested Layouts Technique, vertical layout vs horizontal layout 
+---    |||
+--- Vs |||
+---    ||| 
+
+8. IT IS USEFUL TO USE IMAGE EDITING SOFTWARE TO IDENTIFY NESTED LAYOUTS
+

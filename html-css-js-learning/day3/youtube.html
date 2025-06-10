@@ -5,16 +5,79 @@
     <style>
       .thumbnail{
         width: 300px;
+        display: block;
       }
-
       .search-bar{
         font-size: 20px;
-        margin-left: 12px;
+        display: block
       }
+      .video-title{
+        width: 300px;
+      }
+
+      .video-preview{
+        width: 300px;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+      /* will set these classes to be next to eachother aand only take up
+      as much space as necessary
+      .video-author,
+      .video-stats{
+        display: inline-block;
+      }
+      */
     </style>
   </head>
   <body>
-    <img class="thumbnail" src="thumbnails/">
     <input class="search-bar" type="text" placeholder="Search">
+    <!--A div is a block element so takes up entire line. They are meant
+    to be containers. Also, the structure of divs allows for nested layouts-->
+    <div class="video-preview">
+      <div>
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      </div>
+      <div>
+        <div>
+          <img class="thumbnail" src="channel-pics/channel-1.jpeg">
+        </div>
+        <div>
+          <p class="video-title">
+            Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+          </p>
+          <p class="video-author">
+            Marques Bronwnlee
+          </p>
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+      </div>    
+    </div>
+
+      <p class="video-title">
+        Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+      </p>
+      <p class="video-author">
+        Marques Bronwnlee
+      </p>
+      <p class="video-stats">
+        3.4M views &#183; 6 months ago
+      </p>
+    </div>
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+    </div>
+
   </body>
-</html>
+</html>   
