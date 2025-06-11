@@ -37,3 +37,5 @@ This leads to inaccuracies
 24. EX. `Items (${1+1}): $${(2095+799)}` recommended solution
 
 25. Multi-line strings with bac tics: easy to create line breaks without having to code \n manually
+
+26. var += 1, var++, var = var+1 are the same
