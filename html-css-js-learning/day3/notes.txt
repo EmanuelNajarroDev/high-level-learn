@@ -20,3 +20,10 @@ what is necessary
 
 8. IT IS USEFUL TO USE IMAGE EDITING SOFTWARE TO IDENTIFY NESTED LAYOUTS
 
+9. For nested layouts, it always helps to take the entire object or element,
+and break it down via some editing program. This is good for understanding
+the necessary structure for our nested divs.
+
+10. font-weight setss how thick or thin charaters in text
+should be
+

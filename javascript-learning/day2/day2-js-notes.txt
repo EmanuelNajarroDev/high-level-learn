@@ -1,0 +1,28 @@
+1. Truthy and Falsy values
+
+2. Falsy: false, 0, '', NaN, undefined, null
+
+3. Useful as 'shortcuts'
+
+4. Truthy: numbers, true,
+
+5. to use undefined with constant vars, you must declare them 
+and set them equal to undefined. 
+
+6. vars declared using let will be undefined if not defined.
+
+7. Ternary operator 'truthy' : 'falsy'. Acts like and if-else statement
+
+8. Short-circuit evalution. Guard operator. Acts like a shortcut if statement
+
+9. false && console.log('hello). Checks if both conditions are true.
+
+10. similar to an if statement checking for a condition to be true before running the code within
+
+11. Default operator/ OR operator ||
+
+12. true || value2 will check if the first value is true, and this is all that is necessary.
+
+13. useful for a shortcut of an if statement with a negation. !condition 
+ 
+
