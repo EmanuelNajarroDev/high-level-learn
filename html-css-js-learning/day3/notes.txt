@@ -27,3 +27,23 @@ the necessary structure for our nested divs.
 10. font-weight setss how thick or thin charaters in text
 should be
 
+11. There are multiple ways to achieve some kind of organization for a webpage.
+This includes using classes and css(blocks, inline-blocks, inline,) alongside divs, grids, 
+and flexboxes.
+
+12.align-items: used within Flexbox and Grid layouts to control the alignment 
+of items along the cross axis of their container. Max-width will limit elements 
+to a set number of units and will resize with the window until it reaches its limit
+
+13.Remember the default measurements for various elements(divs, text, body, etc)
+
+14.Justify-content: It determines how extra space within the container is 
+distributed when the items don't fully occupy the main axis.
+It controls the positioning of the flex items, allowing you to align them at 
+the beginning, end, center, or distribute the space between and around them. 
+
+
+15.style="" allows for css to be used within elements
+
+
+
