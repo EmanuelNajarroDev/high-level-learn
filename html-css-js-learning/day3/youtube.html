@@ -14,8 +14,10 @@
         margin-bottom: 0;
       }
       .thumbnail{
-        width: 300px;
-        display: block;
+        /*width: 300px; Not necessary*/
+        /*display: block;*/
+        width: 100%;
+        
       }
       .search-bar{
         font-size: 20px;
@@ -32,10 +34,10 @@
       }
       
       .video-preview{
-        width: 300px;
-        display: inline-block;
-        margin-right: 15px;
-        vertical-align: top;
+        /*width: 300px;*/ 
+        /*display: inline-block;*/
+        /*margin-right: 15px;*/
+        /*vertical-align: top;*/
       }
       /* will set these classes to be next to eachother aand only take up
       as much space as necessary
@@ -44,17 +46,18 @@
         display: inline-block;
       }
       */
+      /*
       .channel-picture{
         display: inline-block;
         width: 50px;
         vertical-align: top;
-        
       }
       .video-info{
         display: inline-block;
         width: 200px;
       }
- 
+      *//*no longer needed since we're using grids for the same purpose*/
+
       .profile-picture{
         width: 40px;
         border-radius: 50px;
@@ -72,68 +75,172 @@
       .video-author{
         margin-bottom: 4px;
       }
+
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
     <!--A div is a block element so takes up entire line. They are meant
     to be containers. Also, the structure of divs allows for nested layouts-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pics/channel-1.jpeg"> 
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
-          </p>
-          <p class="video-author">
-            Marques Bronwnlee
-          </p>
-          <p class="video-stats">
-            3.4M views &#183; 6 months ago
-          </p>
-        
-        </div> 
-      </div>
-    </div>
-    <!-- 
-      <p class="video-title">
-        Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
-      </p>
-      <p class="video-author">
-        Marques Bronwnlee
-      </p>
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
-    -->
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pics/channel-2.jpeg"> 
+        <div class = "video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-1.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Bronwnlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          
+          </div> 
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            <strong>Try Not to Laugh Challenge #9</strong> 
-          </p>
-          <p class="video-author">
-            Markiplier
-          </p>
-          <p class="video-stats">
-            19M views &#183; 4 years ago
-          </p>
-        
-        </div> 
+      </div>
+      <!-- 
+        <p class="video-title">
+          Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+          Marques Bronwnlee
+        </p>
+        <p class="video-stats">
+          3.4M views &#183; 6 months ago
+        </p>
+      -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-2.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <strong>Try Not to Laugh Challenge #9</strong> 
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          
+          </div> 
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
+        <div class = "video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-1.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Bronwnlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          
+          </div> 
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-2.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <strong>Try Not to Laugh Challenge #9</strong> 
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          
+          </div> 
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
+        <div class = "video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-1.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Bronwnlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          
+          </div> 
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-2.jpeg"> 
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <strong>Try Not to Laugh Challenge #9</strong> 
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          
+          </div> 
+        </div>
       </div>
     </div>
-
+    
   </body>
 </html>   
