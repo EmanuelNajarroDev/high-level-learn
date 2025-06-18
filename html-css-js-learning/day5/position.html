@@ -28,6 +28,20 @@
       sidebar
     </div>
 
+    <!--Note: Generally, elements written below will appear in front
+    of elements written above it. The number of the z-index can override
+    this. Higher numbers appear in front-->
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 10px;
+      top: 60px;
+      z-index: 0;
+      ">
+      absolute
+    </div>
+
     <div style="
       background-color: lightblue;
       height: 200px;
@@ -38,6 +52,9 @@
     <div style="
       background-color: lightpink;
       height: 200px;
-      width: 200px;">div 2</div>
+      width: 200px;"
+      >div 2</div>
+
+    </div>
   </body>
 </html>

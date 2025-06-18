@@ -45,5 +45,11 @@ the beginning, end, center, or distribute the space between and around them.
 
 15.style="" allows for css to be used within elements
 
+16. When dealing with css position, if an element is below another element,
+it will appear on top of the first element. This rule does not to apply to 
+position static but it does apply to position relative
+
+17. z-index is required to fix this
+
 
 
