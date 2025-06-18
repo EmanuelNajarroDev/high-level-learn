@@ -5,4 +5,34 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 200;/*So that our sidebar covers our header*/
+  padding-top: 5px;
 }
+/*css selector*/
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* causes our elements to be shown
+  vertically. The properties of align items and 
+  justify-content are then "switched" */
+}
+
+.sidebar-link:hover{ 
+  background-color: rgb(235, 235, 235);
+
+}
+
+/* targeting all images within*/
+.sidebar-link img{
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+
+}
+
