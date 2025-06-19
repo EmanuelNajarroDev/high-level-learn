@@ -1,6 +1,6 @@
 a{
   text-decoration: none;
-  color: black; /*The color is not inherited by all elements which is what we want*/
+  color: black;
 }
 
 p{
