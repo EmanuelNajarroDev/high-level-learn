@@ -51,7 +51,7 @@
   border-width: 1px;
   border-style: solid;
   border-color: rgb(192, 192, 192);
-
+  /*border: 1px solid rgb(192, 192, 192) Short hand for the border related lines*/ 
   border-radius: 2px;
   /*shadow 1 pixel horizontally, 2 pixels vertically, blur of 5*/
   /*all inward because of inset*/ 
@@ -70,9 +70,10 @@
 }
  
 .hamburger-menu{
-  height: 20px;
+  height: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 .youtube-logo{
@@ -94,7 +95,11 @@
 
 /*targeting a unique class within the search-button*/
 .search-button .tooltip,
-.voice-search-button .tooltip{
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icon-container .tooltip{
+  font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
   color: white;
@@ -112,17 +117,25 @@
 }
 
 .search-button:hover .tooltip,
-.voice-search-button:hover .tooltip{
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{ 
   opacity: 1;
 }
 
 .search-button,
-.voice-search-button{
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-icon-container{
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
+
 
 .voice-search-button{
   height: 40px;
@@ -172,4 +185,5 @@
 .current-user-picture{
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
 }
