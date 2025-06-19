@@ -66,7 +66,7 @@
 
 .search-icon{
   height: 25px;
-  margin-top: 4px;
+ /* margin-top: 4px;*/
 }
  
 .hamburger-menu{
@@ -86,9 +86,42 @@
   border-style: solid;
   border-width: 1px;
   border-color: rgb(192, 192, 192);
-
   margin-left: -1px;
   margin-right: 10px;
+
+  position: relative;
+}
+
+/*targeting a unique class within the search-button*/
+.search-button .tooltip,
+.voice-search-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px; /*moves it further to the bottom*/
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip{
+  opacity: 1;
+}
+
+.search-button,
+.voice-search-button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .voice-search-button{
