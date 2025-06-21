@@ -1,0 +1,21 @@
+1. Objects allow us to group multiple values together and
+let us use multiple values together
+
+2. Template literals or backticks allow for interpolation and extra lines via spaces
+
+3. Bracket notation allows us to add new properties to our objects
+and allow us to use properties that do not work with dot notation.
+
+4. We can save any type of value within an object
+
+5. A function is another type of value in JS
+
+6. JSON JavaScript Object Notation. A syntax, similar ot JS object. Less features
+
+7. JSON must use double quotes and does not support functions
+
+8. Can be understand universally, almost every language.
+
+9. Used when we send data between computers and when we store data
+
+10. Built in JSON object

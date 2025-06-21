@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      /*
+      const product = {
+        name: 'socks', //name and price are known as properties
+        price: 1090
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      //changes the value of the property
+      product.name = 'cotton socks'
+      console.log(product)
+
+      product.newProperty = true;
+      console.log(product)
+
+      delete product.newProperty;
+      console.log(product)
+      */
+     const product2 = {
+      name : 'shirt',
+      'delivery-time' : '1 day',
+      rating: {
+        stars: 4.5,
+        count: 87
+      //nested object
+      },
+      fun: function function1(){
+        console.log('function inside object');
+      }
+      
+     };
+     console.log(product2);
+     console.log(product2.name);
+     console.log(product2['name']);
+     console.log(product2['delivery-time']);//bracket notation allows us to add new properties to our objects
+     //and allow us to use properties that do not work with dot notation.
+
+     console.log(product2.rating.count)//Use dot notation multiple times to retrieve properties in a nestedd object
+     product2.fun //function can be called from our object. This is a method
+     console.log(typeof console.log)
+     //Math.random is an object with a function within it, or a method
+
+     const jsonString = JSON.stringify(product2)//converts objects into JSON. Results in a string
+     JSON.parse(jsonString)//turns JSON string into a JavaScript object
+
+    </script>
+  </body>
+</html> 
