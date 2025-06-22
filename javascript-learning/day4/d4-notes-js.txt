@@ -25,3 +25,35 @@ and allow us to use properties that do not work with dot notation.
 12. null = intentionally want something to be empty. 
     if undefined, a parameter can use a default value rather than remain empty
 
+13. strings can also have properties
+
+14. autoboxing wraps strings in special objects like a box.
+
+15. does not autobox with null or undef
+
+16. also works with numbers and bools
+
+17. objects are references
+
+18. The value is created in the computer's memory 
+     the object1 is a reference/pointer to the location of memory
+     const object2 = object1; // doesnt create a new object, copy by reference
+
+19. object1.messsage = 'Good job!';
+     console.log(object1) // we can change the values within the object but const 
+     makes sure the reference is not changed. You need to use the property within
+     our object to do this as shown above. message is a prop within object1
+    
+20. const {message, price} = object4;//destructuring shortcut. Easy way to take properties 
+    from an object and assign them to a variable
+
+21. //shorthand property
+     const object5 = {
+      message, //no need to assign a value to message, it already contains a string
+      
+      method: function function1(){
+        console.log('method');
+      }
+     };
+
+
