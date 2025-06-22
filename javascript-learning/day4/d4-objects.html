@@ -24,6 +24,7 @@
       delete product.newProperty;
       console.log(product)
       */
+     /*
      const product2 = {
       name : 'shirt',
       'delivery-time' : '1 day',
@@ -49,8 +50,53 @@
      //Math.random is an object with a function within it, or a method
 
      const jsonString = JSON.stringify(product2)//converts objects into JSON. Results in a string
-     JSON.parse(jsonString)//turns JSON string into a JavaScript object
+     JSON.parse(jsonString)//turns JSON string into a JavaScript object*/
 
+     console.log('hello'.length)//strings can also have properties
+     console.log('hello'.toUpperCase)//strings can have methods 
+     //autoboxing wraps strings in special objects like a box.
+     //does not work with null or undef
+     //also works with numbers and bools
+     //objects are references
+
+     const object1 ={
+      message:'hello'
+     };
+     //the value is created in the computer's memory 
+     //the object1 is a reference/pointer to the location of memory
+     const object2 = object1; // doesnt create a new object, copy by reference
+
+     object1.messsage = 'Good job!';
+
+     console.log(object1) // we can change the values within the object but const 
+     //makes sure the reference is not changed. You need to use the property within
+     //our object to do this.
+
+     const object3 ={
+      message:'Good job!',
+      price: 799
+     };
+
+     console.log(object3 === object1)//false because they are comparing references, not values
+     console.log(object2 === object1)//true becasue the references are the same.
+     
+     const object4 = {
+      message: 'Good job!'
+     };
+
+     const {message, price} = object4;//destructuring shortcut. Easy way to take properties from an object and assign them to a variable
+     console.log(message);
+     console.log(price);
+    
+     //shorthand property
+     const object5 = {
+      message,//no need to assign a value to message, it already contains a string
+      
+      method: function function1(){
+        console.log('method');
+      }
+     };
+     console.log
     </script>
   </body>
 </html> 

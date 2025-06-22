@@ -12,10 +12,16 @@ and allow us to use properties that do not work with dot notation.
 
 6. JSON JavaScript Object Notation. A syntax, similar ot JS object. Less features
 
-7. JSON must use double quotes and does not support functions
+7. JSON must use double quotes and does not support functions. Only strings
 
 8. Can be understand universally, almost every language.
 
 9. Used when we send data between computers and when we store data
 
 10. Built in JSON object
+
+11. null VS undefined
+
+12. null = intentionally want something to be empty. 
+    if undefined, a parameter can use a default value rather than remain empty
+
