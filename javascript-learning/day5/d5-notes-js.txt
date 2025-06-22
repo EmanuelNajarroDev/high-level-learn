@@ -1,0 +1,6 @@
+1. DOM = Document Object Model
+
+2. Syntax: document.method.method
+
+3.document.querySelector() lets us get any element from the page and put it inside 
+Javascript
