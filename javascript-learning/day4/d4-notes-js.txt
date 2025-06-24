@@ -49,7 +49,7 @@ and allow us to use properties that do not work with dot notation.
 
 21. //shorthand property
      const object5 = {
-      message, //no need to assign a value to message, it already contains a string
+      message,  //no need to assign a value to message, it already contains a string
       
       method: function function1(){
         console.log('method');
