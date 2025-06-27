@@ -26,8 +26,8 @@
       localStorage.removeItem('score');//makes score null, which results in an error because the value doesn't exist
       updateScoreElement();
       ">Reset Score</button>
-    <script>
 
+    <script>
 
       const score = JSON.parse(localStorage.getItem('score')) || {
           wins: 0,
@@ -35,7 +35,8 @@
           ties: 0
         };
         
-        document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+        document.querySelector('.js-score')
+          .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
         //Converted score object into a
       //JSON string to be parsed within score, it is retrieved from local storage as a JSON and then converted
@@ -100,15 +101,19 @@
 
         updateScoreElement();
 
-        document.querySelector('.js-score').innerHTML = `You ${playerMove} - ${computerMove} 
-        Computer`;
+        document.querySelector('.js-result').
+          innerHTML = result;
 
-        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
-
-        return result;
+        document.querySelector('.js-moves').innerHTML
+        = `You ${playerMove} - ${computerMove} 
+        Computer` 
 
       }    
+
+      function updateScoreElement(){
+        document.querySelector('.js-score')
+          .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+      }
 
       function pickComputerMove(){
         const randomNumber = Math.random();
