@@ -5,4 +5,17 @@
 3. document.querySelector() lets us get any element from the page and put it inside 
 Javascript
 
-4. 
+4. Event Listeners
+
+onclick = click
+
+onkeydown = key press
+
+onscroll = scrolling
+
+onmouseenter = hovering over
+
+onmouseleave = stop hovering over...there are more
+
+5. window object represents the browser
+
